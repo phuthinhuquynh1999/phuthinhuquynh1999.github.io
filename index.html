@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BLACKPINK</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/93dc79af49.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+</head>
+<body>
+<div id="banner"> 
+	<div id="menu_top">
+		<div id="logo">
+			<img src="img/landing page.png">
+		</div>
+		<ul>
+			<li><a href="#" title="Home">Home</a></li>
+			<li><a href="#" title="Members">Members</a></li>
+			<li><a href="#" title="Event">Event</a></li>
+			<li><a href="#" title="Album">Album</a></li>
+			<li><a href="#" title="Contact">Contact</a></li>
+		</ul>
+	</div>
+	<div id="readmore">
+		<a href="#" title="READ MORE">
+			<i>READ MORE</i>
+		</a>
+	</div>
+	<div id="bg_menu"><img src="img/bg2.jpg" width="1600" height="80"></div>
+	<div id="hinh_banner">
+		<div id="khoi_hinh">
+			<div class="hinh_active"><img src="img/banner.jpg"></div>
+			<div class="hinh"><img src="img/Untitled-1.jpg"></div>
+			<div class="hinh"><img src="img/Untitled-2.jpg"></div>
+		</div>
+		<div id="nut_slide">
+			<span id="right"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+			<span id="left"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+	<div id="main">
+		<div id="Members">
+			<div id="border"></div>
+			<h1>Members</h1>
+			<div id="hinh_1">
+				<img src="img/50c6375f711c9842c10d.jpg" width="510">
+			</div>
+			<div id="mo_ta">
+				<h2>ROSE</h2>
+				<h1>Roseanne Park (11/2/1997)</h1>
+				<p>Better known by the stage name Rosé (Korean: 로제), is a New Zealand singer currently based in South Korea. Rosé signed with South Korean label YG Entertainment following an audition in 2012, training there for four years. As a solo artist, she has featured in labelmate G-Dragon's 2012 track "Without You", which peaked at number ten on the Gaon Music Chart.</p>
+			</div>
+			<img src="img/bg2.jpg">
+		</div>
+		<div id="Event">
+			<h3>Event</h3>
+			 <div class="container">
+        		<p id="demo"></p>
+      		</div>
+    <script>
+      // Thiết lập thời gian đích mà ta sẽ đếm
+      var countDownDate = new Date("June 31, 2020 15:00:00").getTime();
+
+      // cập nhập thời gian sau mỗi 1 giây
+      var x = setInterval(function() {
+
+        // Lấy thời gian hiện tại
+        var now = new Date("June 29, 2020 21:11:25").getTime();
+
+        // Lấy số thời gian chênh lệch
+        var distance = countDownDate - now;
+
+        // Tính toán số ngày, giờ, phút, giây từ thời gian chênh lệch
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // HIển thị chuỗi thời gian trong thẻ p
+        document.getElementById("demo").innerHTML = days + "   NGÀY   " + hours + "   GIỜ   "
+        + minutes + "   PHÚT   " + seconds + "   GIÂY   ";
+
+        // Nếu thời gian kết thúc, hiển thị chuỗi thông báo
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "Thời gian đếm ngược đã kết thúc";
+        }
+      }, 1000);
+    </script>
+		</div>
+		<div id="Album">
+			<div id="border1"></div>
+			<h1>Album</h1>
+			<div id="noidung">
+				<ul>
+					<li>
+						<img src="img/Rose-Concept-Teaser-How-You-Like-That.jpg" width="423" height="485">
+						<h2>HOW YOU LIKE THAT</h2>
+						<p>"How You Like That" is an upcoming song recorded by South Korean girlgroup Blackpink. It is set to be released on June 26, 2020, through YG and Interscope, as the first single from the group's upcoming Korean-language studio album, set for release in September 2020</p>
+					</li>
+					<li>
+						<img src="img/xt4qw7p1y5551.jpg" width="420" height="485">
+						<h2>KILL THIS LOVE</h2>
+						<p>"How You Like That" is an upcoming song recorded by South Korean girlgroup Blackpink. It is set to be released on June 26, 2020, through YG and Interscope, as the first single from the group's upcoming Korean-language studio album, set for release in September 2020</p>
+					</li>
+				</ul>
+			</div>
+			<img src="img/bg2.jpg">
+		</div>
+		<div id="Poster">
+			<img src="img/cb1-15921800623442027438027.jpeg" width="400" height="600">
+			<img src="img/cb2-15921800623411716854150.jpeg" width="400" height="600">
+			<img src="img/cb3-15923533666491359700639.jpeg" width="400" height="600">
+			<img src="img/f9d5b6007f5e1dc3b755bec117bb9530.jpg" width="386" height="600">
+		</div>
+		<div id="Video">
+			<div id="video_lon">
+				<iframe width="1150" height="646" src="https://www.youtube-nocookie.com/embed/ioNng23DkIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<i>#1 TRÊN TAB THỊNH HÀNH</i>
+				<h3>BLACKPINK - 'How You Like That' M/V</h3>
+				<p>158.066.678 lượt xem        Đã công chiếu vào 26 thg 6, 2020</p>
+			</div>
+			<div id="video_nho">
+				<ul>
+					<li>
+						<iframe width="315" height="177" src="https://www.youtube-nocookie.com/embed/2S24-y0Ij3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</li>
+					<li>
+						<iframe width="315" height="177" src="https://www.youtube-nocookie.com/embed/Amq-qlqbjYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</li>
+					<li>
+						<iframe width="315" height="177" src="https://www.youtube-nocookie.com/embed/IHNzOHi8sJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</li>
+					<li>
+						<iframe width="315" height="177" src="https://www.youtube-nocookie.com/embed/dISNgvVpWlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="left">
+			<img src="img/landing page.png" width="230">
+		</div>
+		<div id="right">
+			<img src="img/facebook.png" width="61" height="60">
+			<img src="img/instagram (1).png" width="61" height="60">
+			<img src="img/linkedin.png" width="61" height="60">
+			<img src="img/twitter.png" width="61" height="60">
+			<img src="img/youtube.png" width="61" height="60">
+			<img src="img/tik-tok.png" width="61" height="60">
+		</div>
+	</div>
+
+</body>
+</html>
